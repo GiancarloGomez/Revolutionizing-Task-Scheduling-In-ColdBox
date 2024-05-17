@@ -1,0 +1,19 @@
+{
+    "cacheDefaultObject":"coldbox",
+    "caches":{
+        "coldbox":{
+            "storage":"true",
+            "type":"RAM",
+            "custom":{
+                "timeToIdleSeconds":"1800",
+                "timeToLiveSeconds":"3600"
+            },
+            "class":"lucee.runtime.cache.ram.RamCache",
+            "readOnly":"false"
+        }
+    },
+    "dotNotationUpperCase":"false",
+    "requestTimeout":"0,0,5,0",
+    "requestTimeoutEnabled":true,
+    "whitespaceManagement":"smart"
+}

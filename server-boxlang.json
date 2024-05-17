@@ -1,0 +1,39 @@
+{
+    "name":"presentations.scheduled-tasks-boxlang",
+    "profile":"development",
+    "trayEnable":true,
+    "trayIcon":"includes/icon/boxlang-icon.png",
+    "dockEnable":false,
+    "openBrowser":false,
+    "app":{
+        "cfengine":"boxlang"
+    },
+    "web":{
+        "bindings":{
+            "HTTP":{
+                "listen":"8092"
+            }
+        },
+        "rewrites":{
+            "enable":true,
+            "logEnable":true
+        },
+        "servletPassPredicate":"regex( '^/(.+?\\.cf[scm])(/.*)?$' ) or regex( '^/(.+?\\.bx[sm])(/.*)?$' )"
+    },
+    "jvm":{
+        "javaVersion":"openjdk17_jdk",
+        "heapSize":1024,
+        "minHeapSize":1024,
+        "args":[
+            "-Duser.timezone=America/New_York"
+        ]
+    },
+    "runwar":{
+        "options":{
+            "engineName":""
+        }
+    },
+    "scripts":{
+        "onServerInitialInstall":"install bx-compat"
+    }
+}

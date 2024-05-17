@@ -1,0 +1,32 @@
+{
+    "name":"presentations.scheduled-tasks-lucee",
+    "profile":"development",
+    "trayEnable":true,
+    "trayIcon":"includes/icon/lucee-icon.png",
+    "dockEnable":false,
+    "openBrowser":false,
+    "app":{
+        "cfengine":"lucee@5.4.5+23"
+    },
+    "web":{
+        "bindings":{
+            "HTTP":{
+                "listen":"8090"
+            }
+        },
+        "rewrites":{
+            "enable":true,
+            "logEnable":false,
+            "config":"./.htaccess"
+        }
+    },
+    "jvm":{
+        "heapSize":1024,
+        "minHeapSize":1024,
+        "args":[
+            "-Duser.timezone=America/New_York"
+        ]
+    },
+    "name=server-boxlang.json":true,
+    "serverConfigFile=server-boxlang.json":true
+}

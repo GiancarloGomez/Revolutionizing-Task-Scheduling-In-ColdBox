@@ -1,0 +1,21 @@
+RewriteEngine on
+
+# Deny access to .htaccess files
+RewriteRule ^\.(git|htaccess)|(server|box)\.json - [F]
+
+# filename-based cache busting
+RewriteCond %{REQUEST_URI} ^/includes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)\.(\d+)\.(js|css|png|jpg|gif)$ $1.$3 [NC,L]
+
+#Images, css, javascript and docs, add your own extensions if needed.
+RewriteCond %{REQUEST_URI} ^/includes
+RewriteCond %{REQUEST_URI} \.(bmp|gif|jpe?g|png|css|js|txt|xls|ico)$
+RewriteRule ^(.*)$ - [NC,L]
+
+#The ColdBox index.cfm/{path_info} rules.
+RewriteRule ^$ /index.cfm [QSA,NS]
+RewriteCond %{REQUEST_URI} !^/lucee
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.cfm/%{REQUEST_URI} [QSA,L,NS]

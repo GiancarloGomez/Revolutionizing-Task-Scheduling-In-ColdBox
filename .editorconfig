@@ -1,0 +1,28 @@
+# http://editorconfig.org
+
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = false
+indent_style = tab
+indent_size = 4
+tab_width = 4
+
+[*.{js,json}]
+charset = utf-8
+indent_size = 4
+indent_style = space
+insert_final_newline = false
+tab_width = 4
+trim_trailing_whitespace = true
+
+[*.yml]
+indent_style = space
+indent_size = 2
+
+[*.{md,markdown}]
+trim_trailing_whitespace = false
+insert_final_newline = false

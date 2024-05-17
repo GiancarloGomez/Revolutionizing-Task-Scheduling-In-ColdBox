@@ -1,0 +1,30 @@
+{
+    "name":"presentations.scheduled-tasks-acf",
+    "profile":"development",
+    "trayEnable":true,
+    "trayIcon":"includes/icon/acf-icon.png",
+    "dockEnable":false,
+    "openBrowser":false,
+    "app":{
+        "cfengine":"adobe@2023.0.7+330663"
+    },
+    "web":{
+        "bindings":{
+            "HTTP":{
+                "listen":"8091"
+            }
+        },
+        "rewrites":{
+            "enable":true,
+            "logEnable":false,
+            "config":"./.htaccess"
+        }
+    },
+    "jvm":{
+        "heapSize":1024,
+        "minHeapSize":1024,
+        "args":[
+            "-Duser.timezone=America/New_York"
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name":"presentations.scheduled-tasks",
+    "version":"1.0.0",
+    "author":"Giancarlo Gomez <giancarlo.gomez@gmail.com>",
+    "type":"mvc",
+    "devDependencies":{
+        "commandbox-dotenv":"*",
+        "commandbox-cfconfig":"*",
+        "commandbox-cfformat":"*"
+    },
+    "installPaths":{
+    },
+    "dependencies":{
+        "coldbox":"be",
+        "bx-compat":"^1.0.0-SNAPSHOT",
+        "route-visualizer":"^2.2.0+1",
+        "scheduled-task-manager":"^1.0.0"
+    }
+}

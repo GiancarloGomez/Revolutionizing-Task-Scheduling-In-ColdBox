@@ -1,0 +1,20 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "ignorePatterns": ["*.min.js"],
+    "parserOptions": {
+      "ecmaVersion": 11,
+      "sourceType": "module"
+    },
+    "rules" :  {
+        "strict" : "off",
+        "eqeqeq" : "error",
+        "no-eval" : "error",
+        "no-unused-labels" : "error",
+        "no-loop-func" : "error",
+        "no-tabs":"error",
+        "no-trailing-spaces":"error"
+    }
+}
