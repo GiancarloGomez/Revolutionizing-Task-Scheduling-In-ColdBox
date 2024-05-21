@@ -17,8 +17,7 @@
         "rewrites":{
             "enable":true,
             "logEnable":true
-        },
-        "servletPassPredicate":"regex( '^/(.+?\\.cf[scm])(/.*)?$' ) or regex( '^/(.+?\\.bx[sm])(/.*)?$' )"
+        }
     },
     "jvm":{
         "javaVersion":"openjdk17_jdk",
