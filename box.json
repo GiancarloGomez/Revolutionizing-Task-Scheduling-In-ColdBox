@@ -12,7 +12,6 @@
     },
     "dependencies":{
         "coldbox":"be",
-        "bx-compat":"^1.0.0-SNAPSHOT",
         "route-visualizer":"^2.2.0+1",
         "scheduled-task-manager":"^1.0.0"
     }
