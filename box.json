@@ -9,9 +9,9 @@
         "commandbox-cfformat":"*"
     },
     "dependencies":{
+        "coldbox":"be",
         "route-visualizer":"^2.2.0+1",
-        "scheduled-task-manager":"^1.0.0",
-        "coldbox":"^7.3.0+16"
+        "scheduled-task-manager":"^1.0.0"
     },
     "installPaths":{
         "coldbox":"coldbox/"

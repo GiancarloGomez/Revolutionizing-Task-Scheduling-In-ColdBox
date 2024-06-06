@@ -33,6 +33,6 @@
         }
     },
     "scripts":{
-        "onServerInitialInstall":"install bx-compat"
+        "onServerInitialInstall":"install bx-compat --noSave"
     }
 }
