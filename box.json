@@ -8,13 +8,12 @@
         "commandbox-cfconfig":"*",
         "commandbox-cfformat":"*"
     },
-    "installPaths":{
-        "bx-compat":"/Users/jc/.CommandBox/server/B1A417486D28D279727D3D806D8CC078-presentations.scheduled-tasks-boxlang/boxlang-1.0.0-SNAPSHOT/WEB-INF/boxlang/modules/bx-compat/"
-    },
     "dependencies":{
-        "coldbox":"be",
         "route-visualizer":"^2.2.0+1",
         "scheduled-task-manager":"^1.0.0",
-        "bx-compat":"^1.0.0-SNAPSHOT"
+        "coldbox":"^7.3.0+16"
+    },
+    "installPaths":{
+        "coldbox":"coldbox/"
     }
 }
