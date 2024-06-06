@@ -20,7 +20,7 @@
         }
     },
     "jvm":{
-        "javaVersion":"openjdk17_jdk",
+        "javaVersion":"openjdk21_jdk",
         "heapSize":1024,
         "minHeapSize":1024,
         "args":[
